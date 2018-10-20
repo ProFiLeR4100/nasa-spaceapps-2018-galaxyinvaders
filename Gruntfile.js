@@ -50,7 +50,6 @@ module.exports = function (grunt) {
                 files: {
                     'build/bundle-libs.min.js': [
                         'resources/libs/jquery-3.3.1.slim.min.js',
-                        'resources/libs/bootstrap.min.js',
                         'resources/libs/socket.io.js',
                         'resources/libs/angular.js',
                         'resources/libs/angular-ui-router.js',
@@ -101,7 +100,7 @@ module.exports = function (grunt) {
                 }, {
                     cwd: 'resources/img',
                     expand: true,
-                    src: ['*.png', '*.svg', '*.gif'],
+                    src: ['*.png', '*.jpg', '*.svg', '*.gif', '*.mp4'],
                     dest: 'build'
                 }, {
                     cwd: 'resources/lang',
