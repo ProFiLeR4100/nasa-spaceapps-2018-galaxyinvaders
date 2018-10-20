@@ -1,0 +1,36 @@
+{
+  "name": "IRRemoteControl",
+  "version": "1.0.0-SNAPSHOT",
+  "author": "ProFiLeR4100",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@isomorphic-git/cors-proxy": "^2.1.0",
+    "adhoc-cors-proxy": "^0.2.6",
+    "corsproxy": "^1.5.0",
+    "express": "^4.16.3",
+    "grunt": "^1.0.3",
+    "grunt-angular-templates": "~1.1.0",
+    "grunt-browser-sync": "~2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-connect-proxy": "^0.2.0",
+    "grunt-contrib-clean": "1.1.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-htmlmin": "2.4.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "3.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-env": "^0.4.4",
+    "grunt-http-server": "^2.1.0",
+    "grunt-npm-command": "^0.1.2",
+    "grunt-run": "^0.8.1",
+    "http-proxy-middleware": "^0.19.0"
+  },
+  "scripts": {
+    "grunt": "grunt default"
+  },
+  "dependencies": {
+    "http-proxy-response-rewrite": "0.0.1",
+    "node-http-proxy-json": "^0.1.6"
+  }
+}
