@@ -1,6 +1,10 @@
-## Space Apps 2018 Challenge
+## Space Apps 2018 Challenge: Discover The Earth
 
-**App for teachers and gamers**
+**About**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac eleifend turpis. Donec non lacus egestas, facilisis magna eget, consectetur arcu. Cras non mi felis. Fusce vel arcu urna. Aenean porttitor nulla eget augue egestas feugiat. Mauris ante enim, dignissim nec purus sed, mollis molestie justo. Vestibulum molestie, ligula nec bibendum imperdiet, ligula ante pellentesque magna, et dictum ipsum odio sed nulla. Curabitur sed venenatis ante. Nulla tincidunt finibus arcu at dictum. Quisque lectus dolor, accumsan sit amet nulla vitae, aliquet auctor felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eleifend vulputate arcu.
+
+**How to install server**
 
 1) Install **Node.JS** for your system, using installer from official `https://nodejs.org/en/download/current/`.
 2) Run file `build.bat` if you are using windows or run command `grunt build` if you are using Unix/Linux/MacOS operation system.
@@ -10,18 +14,4 @@
 
 ---
 
-## Configuring Widgets 
-
-Widget types:
-1) Bottom Line
-
-## Bottom Line Widget
-
-**Structure:**
-
-1) Hierarchy: `root > bottomLine`
-2) Parameters: `settings`, `zones`
-
-**Parameters:**
-1) `settings` - holds general settings for widget.
-2) `zones` - holds components that are drawn inside info line.
+Lorem ipsum dolor sit amet
