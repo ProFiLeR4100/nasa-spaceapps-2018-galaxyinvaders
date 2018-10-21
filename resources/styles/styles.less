@@ -1667,6 +1667,22 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007689e0', endColorstr='#007689e0',GradientType=0 ); /* IE6-9 */
   }
 }
+.horizontal-separator {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7689e0+0,7689e0+50,7689e0+100&0+0,1+50,0+100 */
+    background: -moz-linear-gradient(left, rgba(118,137,224,0) 0%, rgba(118,137,224,1) 50%, rgba(118,137,224,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(118,137,224,0) 0%,rgba(118,137,224,1) 50%,rgba(118,137,224,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(118,137,224,0) 0%,rgba(118,137,224,1) 50%,rgba(118,137,224,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007689e0', endColorstr='#007689e0',GradientType=1 ); /* IE6-9 */
+  }
+}
 
 .no {
   &-mt {
@@ -1715,6 +1731,7 @@ body {
 
 .game-card {
   overflow: hidden;
+  position: relative;
 
   .card-title {
     position:absolute;left:0;right:0;bottom:0;padding: 5px 10px; box-sizing: border-box; background: rgba(0,0,0,0.2)
@@ -1745,6 +1762,15 @@ body {
       position:relative;
     }
   }
+  .placeholder {
+    transition: all 250ms ease;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background: #dddddd;
+  }
 }
 
 .popup {
@@ -1770,6 +1796,51 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
 
+.battle-container {
+  &__wrapper {
+    height: calc(~"100vh - 120px");
+  }
+
+
+  &__enemy-zone, &__player-zone {
+    height: 50%;
+    overflow: hidden;
+
+    .game-card__row {
+      position: relative;
+      transition: all 250ms ease;
+
+      .person {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__enemy-zone {
+    .game-card__row {
+      .game-card {
+        transition: all 250ms ease;
+        top: -80px;
+        transform-origin: 50% 50%;
+        transform: rotate(180deg);
+      }
+    }
+
+    .game-card.active {
+      top: 6px;
+    }
+  }
+
+  &__player-zone {
+    .game-card__row {
+      top: 100px;
+    }
+    .game-card__row.active,
+    .game-card__row:hover {
+      top: 30px;
+    }
+  }
 
 }

@@ -5,8 +5,8 @@ function LobbyMultiPageController($interval, $timeout, $rootScope, ConfigService
     self.config = {};
 
     self.$onInit = function () {
-        ConfigService.getConfig().then(function (json) {
-            self.config = json.data;
-        });
+        self.openPopup = function() {
+            $rootScope.modal("xl", "MultiPlayPopupController", "/popups/multi-play-popup/multi-play-popup.tmpl.html", {});
+        }
     };
 }

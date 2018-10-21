@@ -8,5 +8,18 @@ function BattlePageController($interval, $timeout, $rootScope, ConfigService, $h
         ConfigService.getConfig().then(function (json) {
             self.config = json.data;
         });
+
+        self.$onInit = function () {
+        };
+
+        $timeout(function () {
+            self.enemySelected = true;
+        }, 2000);
+    };
+
+    self.openPopup = function() {
+        $timeout(function () {
+            $rootScope.modal("xl", "MultiPlayGamePopupController", "/popups/multi-play-game-popup/multi-play-game-popup.tmpl.html", {});
+        }, 500);
     };
 }

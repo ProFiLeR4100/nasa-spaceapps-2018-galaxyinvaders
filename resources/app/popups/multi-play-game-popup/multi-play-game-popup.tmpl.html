@@ -1,0 +1,57 @@
+<div class="popup popup__solo-play">
+    <div class="close-popup" ng-click="close()"><i class="fa fa-2x fa-times-circle" aria-hidden="true"></i></div>
+    <div class="popup__container" ng-if="stage==='description'">
+        <h1 class="no-mb no-mt" translate="OCEAN"></h1>
+        <br>
+        <p>По сравнению с Тихим океаном Атлантическому принадлежит почетное второе место во многих областях. Это второй по величине океан планеты, и по глубине – тоже. Самым «бездонным» местом в Атлантике считается Южно-Сандвичев желоб, глубина которого от поверхности составляет почти 8500 км. А вот по солёности Атлантический океан удерживает безоговорочную пальму первенства.</p>
+        <div>
+            <div class="btn btn-success pull-right" translate="START_TEST" ng-click="showTest()"></div>
+            <br>
+        </div>
+    </div>
+    <div class="popup__container" ng-if="stage==='test'">
+        <h1 class="no-mb no-mt" translate="CLOUDS"></h1>
+        <br>
+        <div>
+            <p>Количество льда в Антарктике столько же льда, сколько воды в:</p>
+            <div class="row container-pb">
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option1"> Индийском океане</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option2"> Антлантическом океане</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option3"> Тихом океане</label></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="btn btn-success pull-right" translate="CHECK" ng-click="showResult()"></div>
+            <br>
+        </div>
+    </div>
+    <div class="popup__container" ng-if="stage==='result'">
+        <h1 class="no-mb no-mt" translate="CONGRATULATIONS"></h1>
+        <br>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <div class="container-whitecontainer-shadow container-round game-card" ng-click="showDescription();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/ocean-1.jpg');" class="image-placeholder"></div>
+                        <div translate="OCEAN" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star.png" alt="star" class="lvl img-responsive animated bounce">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="btn btn-success pull-right" translate="CLOSE" href="/#!/lobby-multi-second" ng-click="close()"></a>
+            <br>
+        </div>
+    </div>
+</div>

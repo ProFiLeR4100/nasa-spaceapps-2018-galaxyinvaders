@@ -1,0 +1,37 @@
+<div class="popup popup__solo-play">
+    <div class="close-popup" ng-click="close()"><i class="fa fa-2x fa-times-circle" aria-hidden="true"></i></div>
+    <div class="popup__container" ng-if="stage==='select'">
+        <h1 class="no-mb no-mt" translate="SELECT_OPPONENT"></h1>
+        <br>
+        <div class="row">
+            <div class="col-xs-6 vertical-separator">
+                <h3 translate="RANDOM_PLAYERS"></h3>
+                <div class="row" ng-click="goToPlay()">
+                    <div class="col-xs-3"><img src="/player-1.jpg" style="border-radius: 50%;width:64px;height:64px;"></div>
+                    <div class="col-xs-9"><h4>player 1</h4><span>Scientist</span></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3"><img src="/player-2.jpg" style="border-radius: 50%;width:64px;height:64px;"></div>
+                    <div class="col-xs-9"><h4>player 2</h4><span>Teacher</span></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3"><img src="/player-3.jpg" style="border-radius: 50%;width:64px;height:64px;"></div>
+                    <div class="col-xs-9"><h4>player 3</h4><span>Designer</span></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-3"><img src="/player-4.jpg" style="border-radius: 50%;width:64px;height:64px;"></div>
+                    <div class="col-xs-9"><h4>player 4</h4><span>Gamer</span></div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <h3 translate="SEARCH_PLAYER"></h3>
+                <input type="text" class="form-control">
+                <br>
+                <span style="color: gray" translate="ENTER_TEXT_TO_SEARCH"></span>
+            </div>
+        </div>
+    </div>
+</div>

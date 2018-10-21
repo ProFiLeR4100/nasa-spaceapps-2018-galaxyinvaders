@@ -45,6 +45,15 @@ function ConfigureUIRouter ($stateProvider, $urlRouterProvider) {
                 title: 'GAME_FIELD'
             }
         })
+        .state('lobby-multi-second', {
+            templateUrl: "/pages/lobby-multi-second/lobby-multi-second.tmpl.html",
+            controller: "LobbyMultiSecondPageController",
+            controllerAs: "LobbyMultiSecondPageController",
+            url: '/lobby-multi-second',
+            data: {
+                title: 'GAME_FIELD'
+            }
+        })
         .state('lobby-search', {
             templateUrl: "/pages/lobby-search/lobby-search.tmpl.html",
             controller: "LobbySearchPageController",

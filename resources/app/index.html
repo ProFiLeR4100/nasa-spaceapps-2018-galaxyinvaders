@@ -8,8 +8,8 @@
         <link href="./styles.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body ng-app="NasaSpaceApps">
-        <nav class="navbar navbar-default ">
+    <body ng-app="NasaSpaceApps" ng-controller="MainController as $ctrl">
+        <nav class="navbar navbar-default">
             <!--navbar-inverse navbar-fixed-top-->
             <div class="container">
                 <div class="navbar-header">
@@ -27,9 +27,12 @@
                         <li><a href="#" translate="ABOUT"></a></li>
                         <li><a href="#" translate="CONTACT"></a></li>
                     </ul>
-                    <div class="pull-right">
-                        <a href="#" translate="SIGN_IN" class="btn btn-success btn-navbar"></a>
-                        <a href="#" translate="SIGN_UP" class="btn btn-info btn-navbar"></a>
+                    <div class="pull-right" ng-if="$ctrl.rootScope.state.controller=='HomePageController' || $ctrl.rootScope.state.controller=='RegistrationPageController'">
+                        <a href="#!/registration" translate="SIGN_IN" class="btn btn-success btn-navbar"></a>
+                        <a href="#!/registration" translate="SIGN_UP" class="btn btn-info btn-navbar"></a>
+                    </div>
+                    <div class="pull-right" ng-if="!($ctrl.rootScope.state.controller=='HomePageController' || $ctrl.rootScope.state.controller=='RegistrationPageController')">
+                        <a href="#" translate="SIGN_OUT" class="btn btn-danger btn-navbar"></a>
                     </div>
                 </div><!--/.nav-collapse -->
             </div>
@@ -40,7 +43,7 @@
         <footer class="container footer text-center text-nowrap">
             <div class="row">
                 <div class="col-xs-12">
-                    <p>© 2016 Company, Inc.</p>
+                    <p>© 2018</p>
                 </div>
             </div>
         </footer>

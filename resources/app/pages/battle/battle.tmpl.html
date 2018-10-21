@@ -1,1 +1,44 @@
-battle.tmpl.html
+<div class="battle-container__wrapper container container-round container-shadow container-white">
+    <div class="battle-container__enemy-zone horizontal-separator">
+        <div class="row game-card__row">
+            <div class="col-xs-3 person">
+                <div class="row" ng-click="goToPlay()">
+                    <div class="col-xs-3"><img src="/player-1.jpg" style="border-radius: 50%;width:64px;height:64px;"></div>
+                    <div class="col-xs-9"><h4>player 1</h4><span>Scientist</span></div>
+                </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-2 animated" ng-class="{bounce:BattlePageController.enemySelected}">
+                <div class="container-white container-shadow container-round game-card" ng-class="{active:BattlePageController.enemySelected}"  ng-style="{opacity:BattlePageController.enemySelected?1:0}">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/ocean-1.jpg');" class="image-placeholder"></div>
+                        <div translate="OCEAN" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                    <div class="placeholder" ng-style="{opacity:BattlePageController.enemySelected && selected? 0:1}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="battle-container__player-zone">
+        <div class="row game-card__row animated" ng-class="{bounce:selected, active:selected}">
+            <div class="col-xs-2 col-xs-offset-5">
+
+                <div class="container-white container-shadow container-round game-card " ng-click="selected=true;BattlePageController.openPopup();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/cloud-1.jpg');" class="image-placeholder"></div>
+                        <div translate="CLOUD" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
