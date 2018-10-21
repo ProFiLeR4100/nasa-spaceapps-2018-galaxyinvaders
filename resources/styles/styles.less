@@ -1712,3 +1712,37 @@ body {
   position: relative;
   top: 7px;
 }
+
+.game-card {
+  overflow: hidden;
+
+  .card-title {
+    position:absolute;left:0;right:0;bottom:0;padding: 5px 10px; box-sizing: border-box; background: rgba(0,0,0,0.2)
+  }
+
+  .info-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .lvl {
+    &__wrapper {
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  .image-placeholder {
+    min-width: 200px;
+    min-height: 160px;
+    background-size: cover;
+    &__wrapper {
+      position:relative;
+    }
+  }
+}
