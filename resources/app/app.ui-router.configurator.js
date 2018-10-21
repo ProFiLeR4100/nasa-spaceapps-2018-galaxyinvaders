@@ -8,6 +8,15 @@ function ConfigureUIRouter ($stateProvider, $urlRouterProvider) {
             data: {
                 title: 'MAIN'
             }
+        })
+        .state('game-field', {
+            templateUrl: "/pages/game-field/game-field.tmpl.html",
+            controller: "GameFieldPageController",
+            controllerAs: "GameFieldPageController",
+            url: '/game-field',
+            data: {
+                title: 'GAME_FIELD'
+            }
         });
 
     $urlRouterProvider.otherwise('/home');
