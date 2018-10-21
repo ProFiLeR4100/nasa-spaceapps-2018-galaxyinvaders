@@ -1,0 +1,132 @@
+<div class="popup popup__solo-play">
+    <div class="close-popup" ng-click="close()"><i class="fa fa-2x fa-times-circle" aria-hidden="true"></i></div>
+    <div class="popup__container" ng-if="stage==='select'">
+        <h1 class="no-mb no-mt" translate="SELECT_CATEGORY"></h1>
+        <br>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="container-white container-shadow container-round game-card" ng-click="showDescription();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/volcano-1.jpg');" class="image-placeholder"></div>
+                        <div translate="VOLCANO" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-white container-shadow container-round game-card" ng-click="showDescription();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/cloud-1.jpg');" class="image-placeholder"></div>
+                        <div translate="CLOUD" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-white container-shadow container-round game-card" ng-click="showDescription();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/ocean-1.jpg');" class="image-placeholder"></div>
+                        <div translate="OCEAN" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__container" ng-if="stage==='description'">
+        <h1 class="no-mb no-mt" translate="CLOUDS"></h1>
+        <br>
+        <p>Взаимная связь между цветом/плотностью и осадками достаточно очевидна: несущее в себе большее количество воды (в любой агрегатной форме) облако рассеивает и поглощает падающий на него солнечный свет заведомо сильнее обычного, «рядового» облака — причём величина светопоглощения типично напрямую связана с обильностью либо долговременностью возможных осадков. Отсюда же берётся связь и с атмосферными явлениями «катастрофического» характера — грозой либо градом.</p>
+        <p>Термин «облако» имеет научное хождение, в то время как «туча» является простонародным наименованием определённых типов/видов облаков, причём полностью однозначного соответствия в вопросе «какое облако назовут или не назовут тучей» не существует;Бытовое и зачастую полностью интуитивное разграничение определений между «туча» и «облако» базируется на внешних очевидных признаках, относящихся в первую очередь к визуальной видимости (туча должна быть хорошо очерчена или же чем-то резко выделяться), размеру (чем больше — тем очевиднее, что речь пойдёт о туче), цвету/плотности (чем плотнее и темнее выглядит облако, тем выше вероятность того, что его назовут тучей) и приносимым осадкам в той или иной форме, включая их интенсивность (гроза, ливень).</p>
+        <p>Вообще, существует три типа строго-научной классификации облаков: морфологический (по их внешнему виду), генетический (по типу их происхождения и характеру образования) и микрофизический (по агрегатному состоянию, размеру облачных элементов и т.п.) Заинтересовавшегося читателя отошлём к специализированной литературе, но напоследок отметим, что в одной только лишь морфологической системе с её визуальной классификацией существует десять основных форм облаков, дополнительно подразделяющихся на виды и разновидности — но люди «обычные» специальную литературу как правило не открывают и во все подобные тонкости совершенно не вникают, а пользуются сугубо бытовыми определениями, проистекающими из их повседневного опыта.</p>
+        <div>
+            <div class="btn btn-success pull-right" translate="START_TEST" ng-click="showTest()"></div>
+            <br>
+        </div>
+    </div>
+    <div class="popup__container" ng-if="stage==='test'">
+        <h1 class="no-mb no-mt" translate="CLOUDS"></h1>
+        <br>
+        <div>
+            <p>1. Какой наибольший размер града выпал на Земле?</p>
+            <div class="row container-pb">
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option1"> весом более 1 кг, диаметром 20 см</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option2"> весом 0,5 кг, диаметром 30 см</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios1" value="option3"> весом более 2 кг, диаметром блее 30 см</label></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>2. В какой стране был самый сильный ливень?</p>
+            <div class="row container-pb">
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios2" value="option1"> В Гваделупе обрушились потоки воды с интенсивностью 38 мм/мин</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios2" value="option2"> В Украине обрушились потоки воды с интенсивностью 50 мм/мин</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios2" value="option3"> В ЮАР обрушились потоки воды с интенсивностью 17 мм/мин</label></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>3. На какой высоте не образовываются облака?</p>
+            <div class="row container-pb">
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios3" value="option1"> 1</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios3" value="option2"> 2</label></div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optionsRadios3" value="option3"> 3</label></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="btn btn-success pull-right" translate="CHECK" ng-click="showResult()"></div>
+            <br>
+        </div>
+    </div>
+    <div class="popup__container" ng-if="stage==='result'">
+        <h1 class="no-mb no-mt" translate="CONGRATULATIONS"></h1>
+        <br>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <div class="container-whitecontainer-shadow container-round game-card" ng-click="showDescription();">
+                    <div class="image-placeholder__wrapper">
+                        <div style="background-image: url('/cloud-1.jpg');" class="image-placeholder"></div>
+                        <div translate="CLOUD" class="white-text card-title"></div>
+                    </div>
+                    <div class="lvl__wrapper">
+                        <img src="/star.png" alt="star" class="lvl img-responsive animated bounce">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                        <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="btn btn-success pull-right" translate="CLOSE" href="/#!/lobby-multi" ng-click="close()"></a>
+            <br>
+        </div>
+    </div>
+</div>

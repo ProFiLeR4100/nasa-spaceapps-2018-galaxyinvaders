@@ -1,7 +1,7 @@
 <div class="container container-pt container-pb">
     <div class="row">
         <div class="col-xs-12 text-center">
-            <button class="btn btn-success btn-lg" translate="SOLO"></button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div ng-click="LobbySoloPageController.openPopup();" class="btn btn-success btn-lg" translate="SOLO"></div>&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="btn btn-default btn-lg" disabled translate="MULTIPLAYER"></button>
         </div>
     </div>
@@ -21,6 +21,66 @@
                         <th class="text-center">2</th>
                         <th class="text-center">3</th>
                         <th class="text-center">4</th>
+                    </tr>
+
+                    <tr>
+                        <td translate="CLOUD" class="text-right" style="vertical-align: middle"></td>
+                        <td>
+                            <div class="container-white container-shadow container-round game-card">
+                                <div class="image-placeholder__wrapper">
+                                    <div style="background-image: url('/cloud-1.jpg');" class="image-placeholder"></div>
+                                    <div translate="CLOUD" class="white-text card-title"></div>
+                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="lvl__wrapper">
+                                    <img src="/star.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-white container-shadow container-round game-card">
+                                <div class="image-placeholder__wrapper">
+                                    <div style="background-image: url('/cloud-2.jpg');" class="image-placeholder"></div>
+                                    <div translate="CLOUD" class="white-text card-title"></div>
+                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="lvl__wrapper">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-white container-shadow container-round game-card">
+                                <div class="image-placeholder__wrapper">
+                                    <div style="background-image: url('/cloud-3.jpg');" class="image-placeholder"></div>
+                                    <div translate="CLOUD" class="white-text card-title"></div>
+                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="lvl__wrapper">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="container-white container-shadow container-round game-card">
+                                <div class="image-placeholder__wrapper">
+                                    <div style="background-image: url('/cloud-4.jpg');" class="image-placeholder"></div>
+                                    <div translate="CLOUD" class="white-text card-title"></div>
+                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="lvl__wrapper">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td translate="VOLCANO" class="text-right" style="vertical-align: middle"></td>
@@ -71,65 +131,6 @@
                                 <div class="image-placeholder__wrapper">
                                     <div style="background-image: url('/volcano-4.jpg');" class="image-placeholder"></div>
                                     <div translate="VOLCANO" class="white-text card-title"></div>
-                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lvl__wrapper">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td translate="CLOUD" class="text-right" style="vertical-align: middle"></td>
-                        <td>
-                            <div class="container-white container-shadow container-round game-card">
-                                <div class="image-placeholder__wrapper">
-                                    <div style="background-image: url('/cloud-1.jpg');" class="image-placeholder"></div>
-                                    <div translate="CLOUD" class="white-text card-title"></div>
-                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lvl__wrapper">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container-white container-shadow container-round game-card">
-                                <div class="image-placeholder__wrapper">
-                                    <div style="background-image: url('/cloud-2.jpg');" class="image-placeholder"></div>
-                                    <div translate="CLOUD" class="white-text card-title"></div>
-                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lvl__wrapper">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container-white container-shadow container-round game-card">
-                                <div class="image-placeholder__wrapper">
-                                    <div style="background-image: url('/cloud-3.jpg');" class="image-placeholder"></div>
-                                    <div translate="CLOUD" class="white-text card-title"></div>
-                                    <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lvl__wrapper">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                    <img src="/star-o.png" alt="star" class="lvl img-responsive">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="container-white container-shadow container-round game-card">
-                                <div class="image-placeholder__wrapper">
-                                    <div style="background-image: url('/cloud-4.jpg');" class="image-placeholder"></div>
-                                    <div translate="CLOUD" class="white-text card-title"></div>
                                     <div class="info-btn text-white"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></div>
                                 </div>
                                 <div class="lvl__wrapper">

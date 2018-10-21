@@ -1599,7 +1599,7 @@ a.text-dark:focus,a.text-dark:hover {
 /* Bootstrap 4 Colors end */
 
 
-//@import (less)"bootstrap.css";
+@import (less)"animation.css";
 //@import (less)"bootstrap-theme.css";
 
 * {
@@ -1745,4 +1745,31 @@ body {
       position:relative;
     }
   }
+}
+
+.popup {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  .close-popup {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 15px;
+    top: 15px;
+
+  }
+
+  &__solo-play {
+    .game-card {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
 }

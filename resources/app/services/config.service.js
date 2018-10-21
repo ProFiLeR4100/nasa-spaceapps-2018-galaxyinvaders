@@ -5,6 +5,7 @@ function ConfigService(RestService, $q) {
 
     factory.getConfig = function () {
         var defered = $q.defer();
+
         RestService.httpRequest("./config.json", "GET").then(function (response) {
             // angular.forEach(response.data["donations"], function (url, key) {
             //     response.data["donations"][key] = url.replace(/http:\/\/www.donationalerts.ru/, "");

@@ -3,6 +3,7 @@ app.controller('SoloPlayPopupController', ['$scope', '$uibModalInstance', 'model
 function SoloPlayPopupController($scope, $uibModalInstance, model, $timeout, $rootScope) {
 
     $scope.model = angular.copy(model);
+    $scope.stage = 'select';
     // $scope.movePage = $rootScope.movePage;
     // $scope.configureTabs = $rootScope.configureTabs;
 
@@ -17,5 +18,17 @@ function SoloPlayPopupController($scope, $uibModalInstance, model, $timeout, $ro
 
     $scope.close = function () {
         $uibModalInstance.close();
+    };
+
+    $scope.showDescription = function () {
+        $scope.stage = 'description';
+    };
+
+    $scope.showTest = function () {
+        $scope.stage = 'test';
+    };
+
+    $scope.showResult = function () {
+        $scope.stage = 'result';
     };
 }

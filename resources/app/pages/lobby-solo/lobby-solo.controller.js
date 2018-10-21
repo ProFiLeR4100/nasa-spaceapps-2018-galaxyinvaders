@@ -1,19 +1,16 @@
 app.controller("LobbySoloPageController", ['$interval', '$timeout', '$rootScope', 'ConfigService', '$http', '$q', '$sce', '$element', LobbySoloPageController]);
 
-function LobbySoloPageController($interval, $timeout, $rootScope, ConfigService, $http, $q, $sce, $element, donationWidgetService) {
+function LobbySoloPageController($interval, $timeout, $rootScope, ConfigService, $http, $q, $sce, $element) {
     var self = this;
     self.config = {};
 
     self.$onInit = function () {
-        ConfigService.getConfig().then(function (json) {
-            self.config = json.data;
-        });
+        // ConfigService.getConfig().then(function (json) {
+        //     self.config = json.data;
+        // });
 
-        function openPopup() {
-            $rootScope.modal("xl", "AssistancePopupController", $scope.assistancePopupPath, {
-                afterLoginPage: $scope.afterLoginPage,
-                id: id
-            });
+        self.openPopup = function() {
+            $rootScope.modal("xl", "SoloPlayPopupController", "/popups/solo-play-popup/solo-play-popup.tmpl.html", {});
         }
     };
 }
